@@ -18,6 +18,10 @@ public class BikeService {
         return bikeRepository.findAll();
     }
 
+    public void create(Bike bike){
+        bikeRepository.save(bike);
+    }
+
     public Bike get(long id){
         return bikeRepository.getOne(id);
     }
